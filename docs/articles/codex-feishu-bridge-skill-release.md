@@ -4,6 +4,22 @@
 
 它不是一个云服务，也不是一个飞书机器人成品托管平台。它更像一本给 Codex 用的本地运维手册：当你想让飞书或 Lark 成为本机 Codex 的远程入口时，Codex 可以按这套 skill 去安装、排障、接多机器人、处理附件、做 Windows 守护，并在发布前守住公开和私有信息边界。
 
+更直白一点：它的目标不是做一个“会聊天的机器人”，而是让飞书端拥有接近 Codex 桌面线程的入口能力。你可以在手机上看到可接线的本机 Codex 线程，按序号接入某一条线程，然后后续普通消息就临时进入那条线程。
+
+## 接近桌面线程的飞书入口
+
+桌面 Codex 里有多个长期线程：windows 大师、skills 大师、网页大师、搜索大师、项目主 agent 等。飞书桥的接线模式，就是把这些本机线程映射到飞书里。
+
+在飞书里回复“接线”，可以看到可接线线程列表：
+
+![飞书可接线线程列表](../images/codex-feishu-bridge-skill/feishu-thread-list-safe.png)
+
+回复对应序号后，就能把后续消息临时送进指定线程：
+
+![飞书接入本机 Codex 线程](../images/codex-feishu-bridge-skill/feishu-connected-thread-safe.png)
+
+这不是完全复制桌面 UI，但核心工作流很接近：同一批本机线程、同一套项目上下文、同样可以继续交代任务、传图片和文件，只是入口从桌面切到了飞书。
+
 ## 它解决什么问题
 
 本地 Codex 飞书桥一旦开始长期使用，问题通常不在“能不能跑一次”，而在这些细节：
@@ -30,6 +46,7 @@
 - `references/runtime-design.md`：本地拓扑和隔离原则。
 - `references/release-boundary.md`：公开版和私有版边界。
 - `references/sample-runtimes.json`：占位 runtime 配置。
+- `docs/images/codex-feishu-bridge-skill/`：公开安全版插图，已遮盖线程 ID、本机路径、头像和附件预览。
 
 ## 适合谁
 

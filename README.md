@@ -21,6 +21,8 @@ skills/codex-feishu-bridge/
   references/
 docs/articles/
   codex-feishu-bridge-skill-release.md
+docs/images/
+  codex-feishu-bridge-skill/
 ```
 
 ## Install The Skill
@@ -95,3 +97,5 @@ Before publishing, verify that the bundle contains no:
 ## Article Draft
 
 See `docs/articles/codex-feishu-bridge-skill-release.md`.
+
+The article includes sanitized screenshots that show the bridge acting as a near-desktop thread entrance from Feishu/Lark. Thread IDs, local paths, avatars, and attachment previews are redacted.
