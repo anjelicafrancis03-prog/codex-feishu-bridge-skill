@@ -1,0 +1,23 @@
+{
+  "logDir": "%USERPROFILE%\\.codex-im\\guard-logs",
+  "runtimes": [
+    {
+      "name": "primary",
+      "role": "feishu-primary",
+      "root": "C:\\path\\to\\bridge-primary",
+      "enabled": true
+    },
+    {
+      "name": "router",
+      "role": "feishu-router",
+      "root": "C:\\path\\to\\bridge-router",
+      "enabled": true
+    },
+    {
+      "name": "disabled-example",
+      "role": "disabled",
+      "root": "C:\\path\\to\\bridge-disabled",
+      "enabled": false
+    }
+  ]
+}

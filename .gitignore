@@ -1,0 +1,17 @@
+.env
+.env.*
+*.log
+*.jsonl
+*.sqlite
+*.sqlite-*
+sessions*
+state_*.sqlite
+node_modules/
+dist/
+build/
+*.tgz
+*.zip
+*.7z
+__pycache__/
+.DS_Store
+Thumbs.db
